@@ -1,0 +1,195 @@
+{
+	"entities": [
+		{
+			"can_attack": false,
+			"can_interact": false,
+			"center": [
+				376.0,
+				160.0
+			],
+			"describe": "在这里可以使用种子种植",
+			"id": "41490056862",
+			"is_obstacle": false,
+			"layer": 0,
+			"name": "seedLayer",
+			"rect": [
+				304.0,
+				112.0,
+				144.0,
+				96.0
+			],
+			"type": "seed_layer"
+		},
+		{
+			"can_attack": false,
+			"can_interact": true,
+			"center": [
+				544.0,
+				136.0
+			],
+			"describe": "交互可以获得纯净水*1",
+			"id": "41506834079",
+			"is_obstacle": false,
+			"layer": 0,
+			"name": "purifiedWaterLayer",
+			"rect": [
+				496.0,
+				112.0,
+				96.0,
+				48.0
+			],
+			"type": "purified_water_layer"
+		},
+		{
+			"can_attack": false,
+			"can_interact": false,
+			"center": [
+				243.0,
+				181.0
+			],
+			"describe": "砍到树可以获得10木头",
+			"hp": 100,
+			"id": "42144368325",
+			"is_obstacle": false,
+			"layer": 0,
+			"name": "树1",
+			"rect": [
+				211.0,
+				141.0,
+				64.0,
+				80.0
+			],
+			"type": "static_body_2d"
+		},
+		{
+			"can_attack": false,
+			"can_interact": false,
+			"center": [
+				208.0,
+				259.0
+			],
+			"describe": "砍到树可以获得10木头",
+			"hp": 100,
+			"id": "42194699976",
+			"is_obstacle": false,
+			"layer": 0,
+			"name": "树2",
+			"rect": [
+				176.0,
+				219.0,
+				64.0,
+				80.0
+			],
+			"type": "static_body_2d"
+		},
+		{
+			"can_attack": false,
+			"can_interact": false,
+			"center": [
+				171.0,
+				148.0
+			],
+			"describe": "砍到树可以获得10木头",
+			"hp": 100,
+			"id": "42245031627",
+			"is_obstacle": false,
+			"layer": 0,
+			"name": "树3",
+			"rect": [
+				139.0,
+				108.0,
+				64.0,
+				80.0
+			],
+			"type": "static_body_2d"
+		}
+	],
+	"map_metadata": {
+		"bounds": [
+			0.0,
+			0.0,
+			0.0,
+			0.0
+		],
+		"nav_polygons": [
+			[
+				[
+					1.0,
+					-1.0
+				],
+				[
+					1149.0,
+					0.0
+				],
+				[
+					1151.0,
+					649.0
+				],
+				[
+					321.0,
+					651.0
+				],
+				[
+					323.0,
+					495.0
+				],
+				[
+					-4.0,
+					495.0
+				]
+			]
+		]
+	},
+	"player_status": {
+		"current_pos": [
+			609.0,
+			305.0
+		],
+		"hp": 100,
+		"inventory": [
+			{
+				"amount": 3,
+				"category": "USEABLE",
+				"describe": "使用该物品可以增加10含水量",
+				"item_id": 1,
+				"name": "纯净水"
+			},
+			{
+				"amount": 3,
+				"category": "USEABLE",
+				"describe": "使用该物品可以增加10饱食度",
+				"item_id": 2,
+				"name": "胡萝卜"
+			},
+			{
+				"amount": 3,
+				"category": "SEED",
+				"describe": "种植后可以产出胡萝卜",
+				"item_id": 3,
+				"name": "胡萝卜种子"
+			},
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		"is_sleeping": false,
+		"player_id": "npc_001",
+		"player_name": "老村长"
+	},
+	"timestamp": 1769864531.98,
+	"world_name": "main"
+}
