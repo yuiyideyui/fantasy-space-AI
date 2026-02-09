@@ -31,11 +31,10 @@ async def handle_godot_request(websocket):
                     json={
                         "system_prompt": system_prompt,
                         "scene_report": scene_report,
-                        "temperature": 0.2
+                        "temperature": 0.1
                     }
                 ) as resp:
                     result = await resp.json()
-                print('result',result)
                 ai_content = result.get("response", {})
                 print('ai_content',ai_content)
                 payload = {

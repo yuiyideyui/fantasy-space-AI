@@ -3,7 +3,6 @@ import math
 class MapAnalyzer:
     @staticmethod
     def get_scene_summary(data: dict) -> str:
-        print('data',data)
         """将原始 JSON 转换为 Markdown 结构的深度环境报告"""
         player = data.get("player_status", {})
         p_pos = player.get("current_pos", [0, 0])
@@ -22,7 +21,8 @@ class MapAnalyzer:
         report += f"- **攻击力**: {player.get('attack_power', 0)} | **防御力**: {player.get('defense', 0)}\n"
 
         report += "### 历史记录\n"
-        report += f"- **聊天记录**: {player.get('chat_history', [])}\n"
+        report += f"- **记录**: {player.get('chat_history', [])}\n"
+        report += f"- **经验**: {player.get('experiences', [])}\n"
         # 2. 导航边界
         nav_data = data.get("map_metadata", {}).get("nav_polygons", [])
         if nav_data and len(nav_data[0]) > 0:
@@ -53,7 +53,6 @@ class MapAnalyzer:
             for p in other_players:
                 p_name = p.get("npc_name", "未知实体")
                 p_pos_info = p.get("position", "未知位置")
-                print('p_pos_info',p_pos_info)
                 # 将字典或数组格式的坐标转为可读字符串
                 if isinstance(p_pos_info, dict):
                     pos_str = f"({p_pos_info.get('x', 0)}, {p_pos_info.get('y', 0)})"
